@@ -1,0 +1,15 @@
+﻿@model Dictionary<string, string>
+
+<h1>Contact Us</h1>
+
+<p><b>Here's how you can reach us:</b></p>
+
+<table>
+@foreach (var item in Model)
+
+		{
+			<tr><td>@item.Key</td>
+				<td>@item.Value</td></tr>
+		}
+	
+	</table>
